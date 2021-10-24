@@ -506,6 +506,11 @@ type Target struct {
 		Type   string   `json:"type,omitempty"`
 		Params []string `json:"params,omitempty"`
 	} `json:"group,omitempty"`
+	
+	GroupBy []struct {
+		Type   string   `json:"type,omitempty"`
+		Params []string `json:"params,omitempty"`
+	} `json:"groupBy,omitempty"`
 
 	// For Prometheus
 	Expr           string `json:"expr,omitempty"`
