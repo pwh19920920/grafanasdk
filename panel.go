@@ -162,6 +162,11 @@ type (
 		Xaxis           Axis             `json:"xaxis"` // was added in Grafana 4.x?
 		Yaxes           []Axis           `json:"yaxes"` // was added in Grafana 4.x?
 		FieldConfig     *FieldConfig     `json:"fieldConfig,omitempty"`
+		Options         struct {
+			Tooltip struct {
+				Mode string `json:"mode,omitempty"`
+			} `json:"tooltip,omitempty"`
+		} `json:"options,omitempty"`
 	}
 	FieldConfig struct {
 		Defaults struct {
@@ -506,7 +511,7 @@ type Target struct {
 		Type   string   `json:"type,omitempty"`
 		Params []string `json:"params,omitempty"`
 	} `json:"group,omitempty"`
-	
+
 	GroupBy []struct {
 		Type   string   `json:"type,omitempty"`
 		Params []string `json:"params,omitempty"`
