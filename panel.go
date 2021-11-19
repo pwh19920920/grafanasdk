@@ -180,6 +180,10 @@ type (
 			} `json:"threshold"`
 			Links []Link `json:"links,omitempty"`
 		} `json:"defaults"`
+
+		Custom struct {
+			FillOpacity int `json:"fillOpacity"`
+		} `json:"custom"`
 	}
 	Options struct {
 		Orientation   string `json:"orientation"`
