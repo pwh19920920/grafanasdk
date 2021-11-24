@@ -179,11 +179,11 @@ type (
 				} `json:"steps"`
 			} `json:"threshold"`
 			Links []Link `json:"links,omitempty"`
-		} `json:"defaults"`
 
-		Custom struct {
-			FillOpacity int `json:"fillOpacity"`
-		} `json:"custom"`
+			Custom struct {
+				FillOpacity int `json:"fillOpacity"`
+			} `json:"custom"`
+		} `json:"defaults"`
 	}
 	Options struct {
 		Orientation   string `json:"orientation"`
