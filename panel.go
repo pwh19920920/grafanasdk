@@ -181,7 +181,8 @@ type (
 			Links []Link `json:"links,omitempty"`
 
 			Custom struct {
-				FillOpacity int `json:"fillOpacity"`
+				FillOpacity *int32 `json:"fillOpacity"`
+				PointSize   *int32 `json:"pointSize"`
 			} `json:"custom"`
 		} `json:"defaults"`
 	}
