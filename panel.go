@@ -533,6 +533,7 @@ type Target struct {
 
 	// For InfluxDB
 	Measurement string `json:"measurement,omitempty"`
+	Policy      string `json:"policy,omitempty"`
 
 	// For Elasticsearch
 	DsType  *string `json:"dsType,omitempty"`
